@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+result = re.search("[0-9]{2}\.[0-9]{2}\.[])
+print(result.group())
+
+#Find words start with vowels
+print(re.indall("\\b[aeiouAEIOU]\S*", txt))
+
+# Split a string with multiple delimiters
+print(re.split("\s|,|\.",txt))

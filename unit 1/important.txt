@@ -1,0 +1,4 @@
+# Create API document
+python -m pydoc -w Sample
+where as sample is the same of Sample.py
+pyton -m pydoc -w M1_OtherFunctions
