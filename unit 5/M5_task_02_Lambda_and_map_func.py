@@ -30,21 +30,22 @@ print(root(4))
 
 def myfunc(n):
     return len(n)
-x = map(myfunc, ('apple','banana','cherry'),('orange','lemon','pineapple'))
+x = map(myfunc, ('apple','banana','cherry'))#,('orange','lemon','pineapple'))
 print(list(x))
 
 '''
 Q3. WAP in python to check if the number is prime or not?
 check multiple numbers at once
 '''
+import math
 def primeornot(l):
-    #logic would come here!
-    range = math.sqrt(l)
-    for i in range(2,range):
+    if l <=1:
+        return "Not Prime"
+    range_sqrt = math.sqrt(l)
+    for i in range(2,int(range_sqrt) + 1):
         if l%i == 0:
-            print("Not prime")
-            return
-    print("Prime")
+            return "Not prime"
+    return "Prime"
 
 x = map(primeornot, (5,7,9,11))
 print(list(x))

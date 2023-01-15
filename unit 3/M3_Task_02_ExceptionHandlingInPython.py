@@ -20,11 +20,12 @@
 
 '''
 #1
-path = 'C:\Users\Dell 5000\python workspace\unit 3'
+path = 'C:\\Users\\Dell 5000\\python workspace\\unit 3\\'
+
 
 try:
     #Write suspicious code here!
-    f = open(path + "abc.txt", 'w')
+    f = open(path + "abcM2.txt", 'w')
     a = int(input("Enter a: "))
     b = int(input("Enter b: "))
     c = a/b
@@ -34,7 +35,10 @@ except ZeroDivisionError:
     # This block of code only runs when exception
     print("Divison by zero happened, so don't enter zero as input")
 
+else:
+    print("Result is -> ",c)
+    
 finally:
-  # This block of code will always run
-  f.close()
-  print("file is closed now")
+    # This block of code will always run
+    f.close()
+    print("file is closed now")

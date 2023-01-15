@@ -8,12 +8,13 @@
 import sys
 # x = int(input("Enter a number -> "))
 # n = len(sys.argv)
-x = sys.argv[1]
+x = int(sys.argv[1])
+count = 0
 for i in range(2,x//2):
     if x%i == 0:
         count = count+1
 
 if count == 0 :
-    print("Number is prime")
+    print(x," Number is prime")
 else:
     print("Number not prime")

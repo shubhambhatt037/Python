@@ -7,6 +7,12 @@ import sys
 cwd = os.getcwd()
 print("Current working directory:", cwd)
 
+# list all directories
+# print(os.listdir())
+
+# make a folder
+# os.mkdir("new folder")
+
 # # changing the current working directory
 # def current_path():
 #     print("Current working directory before")
@@ -24,7 +30,7 @@ print("Current working directory:", cwd)
 # # Directory
 # directory = "akash"
 # parent_dir = os.getcwd()
-# path = os.path.join(parent_dir,directory)
+# path = os.path.join(parent_dir,directory)    #joins two paths
 
 # Remove a file
 
@@ -47,7 +53,8 @@ Interpreter with some additional information.
 - This shows how the sys module interacts with the interpreter.
 '''
 import sys
-print(sys.version)
+# print(sys.version)
+# print(sys.platform)
 
 #Input and output using sys
 '''
@@ -56,9 +63,9 @@ print(sys.version)
 - It, also, automatically adds '\n' after each sentence
 '''
 for line in sys.stdin:
-    if 'q' == line.rstrip():
-        break;
-    print(f'Input : {line}')
+  if 'q' == line.rstrip():
+    break
+  print(f'Input : {line}')
 
 print("Exit")
 
@@ -78,8 +85,8 @@ sys.stdout.write('Akash Chauhan')
 sys.stdout.write('Akash Chauhan')
 sys.stdout.write('Akash Chauhan')
 
-print("Akash Chauhan", end = "")
-print("Akash Chauhan", end = "")
+# print("Akash Chauhan")
+# print("Akash Chauhan", end = "")
 
 # sys.argv:
 '''
@@ -96,14 +103,14 @@ print("Total arguments passed:", n)
 # Arguments passed
 print("\nName of Python script:", sys.argv[0])
 
-print("\nArguments passed:",end = " ")
-for i in range(1 , n):
-    print(sys.argv[i], end = " ")
+# print("\nArguments passed:",end = " ")
+# for i in range(1 , n):
+#     print(sys.argv[i], end = " ")
 
 # Addition of numbers
 Sum = 0
 
-for i in range(1 , n+1):
+for i in range(1 , n):
     Sum += int(sys.argv[i])
 
 print("\n\nResult:", Sum)
